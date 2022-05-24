@@ -13,7 +13,7 @@
         h1{
             
             text-align: center;
-            color: #314d4a;
+            color: #e6e6e6;
             font-family:'Cinzel', serif;
             font-size: 30px;
             background-image: url("") ;  
@@ -53,7 +53,7 @@
         
         }
         a:hover {
-            color: #575048;
+            color: #8b9e9b;
             text-align: left;
         }
         li a {
@@ -81,9 +81,23 @@
         color: #fcee8c;
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.34), 0 17px 50px 0 rgba(0,0,0,0.29);
 }
+
 div {
     text-align: center;
 }
+#tm-social {
+                width: 30px;
+                height: 30px;
+                padding: 10px;
+            }
+/* p{
+    text-align: center;
+    color: white;
+}
+#Maps {
+    text-align: center;
+    display:flexbox;
+} */
     </style>
 </head>
 <body>
@@ -101,28 +115,50 @@ div {
 
         <img src="Assets/img/profile-pic (4).png" alt="Photo of the creator of the page">
     </div>
+    <div>
+        <h2>Send a message</h2>
+        <form>
+            <label for="nome">Name:</label><br>
+            <input type="text" id="nome">
+            <br>
+            <br>
+            <label for="e-mail">E-mail:</label><br>
+            <input type="email" id="email">
+            <br>
+            <br>    
+            <label for="assunto">Subject</label><br>
+           <textarea name="assunto" id="assunto" cols="40" rows="5"></textarea>
+            <br>
+            <br>
+           <button>Send</button>
+        </form>
+
+    </div>
+    <!-- <h2>Address</h2> -->
    
-    
-
-    <form>
-        <label for="nome">Name:</label><br>
-        <input type="text" id="nome">
-        <br>
-        <br>
-        <label for="e-mail">E-mail:</label><br>
-        <input type="email" id="email">
-        <br>
-        <br>    
-        <label for="assunto">Subject</label><br>
-       <textarea name="assunto" id="assunto" cols="40" rows="5"></textarea>
-        <br>
-        <br>
-       <button>Send</button>
-    </form>
-
-    <h2>Address</h2>
-    <p>438 Largo da Santa Cruz</p>
-    <p>Recife-PE</p>  
-    <iframe src="https://www.google.com/maps/embed?pb=!4v1652982889829!6m8!1m7!1sldoTz2U8vJSMULMSxk628g!2m2!1d-8.062072177962246!2d-34.88783387114876!3f16.636717420848314!4f-8.680194630646227!5f0.7820865974627469" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+    <div id="Maps">
+        <h3>Address</h3>
+        <p>438 Largo da Santa Cruz</p>
+        <p>Recife-PE</p>  
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1652982889829!6m8!1m7!1sldoTz2U8vJSMULMSxk628g!2m2!1d-8.062072177962246!2d-34.88783387114876!3f16.636717420848314!4f-8.680194630646227!5f0.7820865974627469" width="700" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+    </div>
+    <hr>
+    <div> 
+        <a href="https://github.com/theonnogueira" target="_blank"> <img id="tm-social" src="assets/img/github.png" alt="Logo do Github"></a>
+     <a href="https://www.linkedin.com/in/theo-nogueira/ " target="_blank" ><img id="tm-social" src="assets/img/linkedin.png" alt="Logo do LinkedIn"></a>
+     <a href="https://outlook.live.com/owa/theonnogueira/" target="_blank"> <img id="tm-social" src="assets/img/outlook.png" alt="Logo do Outlook"></a>
+      
+  </div>
+    <footer>
+        <style>
+            p {
+                text-align: center;
+            }
+        </style>
+        <p>
+          Todos os direitos reservados: Theo N Medeiros &copy; 
+        </p>
+      
+    </footer>
 </body>
 </html>

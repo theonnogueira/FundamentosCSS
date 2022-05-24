@@ -4,6 +4,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="stylesheet" href="style.css">
+  
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,17 +16,19 @@
         }
         p {
             font-size: 20px;
-           text-align: center; 
+           /* text-align: center;  */
            text-indent: 100px;
+           
         }
         h1 {
-            text-decoration-line: overline;
+            text-decoration-line:overline;
             text-align: left;
-            color: #314d4a;
+            color: #8b9e9b;
             font-family:'Cinzel', serif;
             font-size: 30px;
             background-image: url("") ;
             text-shadow: 2px 2px;
+            margin-bottom: 50px;
            
             
             
@@ -35,8 +39,8 @@
             font-size: 15px;
             font-family: 'Cinzel', serif;
             list-style-type: none;
-            margin: 0;
-            padding: 0;     
+            margin: 20px;
+            padding: 30px;     
             
             
         }
@@ -48,10 +52,13 @@
         a {
             color:#fcee8c ;
             text-decoration-line: none;
+            margin: none;
+            padding: none;     
+            
         
         }
         a:hover {
-            color: #575048;
+            color: #8b9e9b;
             text-align: left;
         }
         
@@ -69,6 +76,12 @@
         
         div {
             text-align: center;
+            display: flex;
+            flex-flow: row;
+            flex-wrap: row wrap;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
             
         }
         body {
@@ -77,14 +90,15 @@
         }
         h2 {
             color: #cccccc;
+            text-align: right;
             font-family: Arial, Helvetica, sans-serif;
         }
         h3 {
-            text-align: center;
-            color: #008584;
+            text-align: right;
+            color: #fbebaf;
             font-size: 25;
             font-family: 'Cinzel', serif;
-            border-style: outset;
+            border-style:none;
         }
         h4 {
             text-align: center;
@@ -93,8 +107,18 @@
             font-family: Arial, Helvetica, sans-serif;
             }
             h6 {
-            margin: auto;
+            margin: 30px;
             display: block;
+            }
+            #tm-social {
+                width: 50 px;
+                height: 50px;
+                padding: 10px;
+            }
+            #tm-linguage {
+                width: 50 px;
+                height: 50px;
+                padding: 10px;
             }
     </style>
     <link rel="stylesheet" href="Assets/css/style.css">
@@ -109,18 +133,23 @@
             <a href="contato.html"> Contact </a>
         </li>
     </ul>
+  
     <h1>
         About Th. Nogueira</h1>
         <div>
             <img src="Assets/img/X7bO5PtVJeyKEvYu_tH034NlZX5bauErF.gif" alt="Computer Gif">
-        </div>
-        <div> 
-            
+            <br>
             <h1>Studying Programming </h1>
+            <img id="tm-linguage" src="assets/img/html-5.png" alt="Logo da ferramento HTML">
+            <img id="tm-linguage" src="assets/img/js.png" alt="Logo da linguagem JavaScript">
+            <img id="tm-linguage" src="assets/img/css-3.png" alt="Logo da ferramento CSS">
+            <!-- <h2> CSS| JavaScript| TypeScript| Angular| Bootstrap| HTML5 </h2> -->
+        </div>
+       
+        <div>
             <br>
             <br>
-            <br>
-    <h2> CSS| JavaScript| TypeScript| Angular| Bootstrap| HTML5 </h2>
+
     <h3> The Front-End </h3>
             <div>
                 <p id="p1"> 
@@ -141,6 +170,7 @@
                 </p>
 
             </div>
+           
 
           
            
@@ -151,12 +181,41 @@
 <br>
     <h4 class="hfor">The evolution of technology</h4>
     <div>
+        <style>
+            div {
+                text-align: center;
+            display: flex;
+            flex-flow: row;
+            flex-wrap: row wrap;
+            justify-content: center;
+            align-items: center; 
+            }
+        </style>
         <iframe width="1280" height="400" src="https://www.youtube.com/embed/tcLLTsP3wlo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     
     
     
-  
+  <script src="assets/img/script/script.js"></script>
+
+  <hr>
+  <div> 
+      <a href="https://github.com/theonnogueira" target="_blank"> <img id="tm-social" src="assets/img/github.png" alt="Logo do Github"></a>
+   <a href="https://www.linkedin.com/in/theo-nogueira/ " target="_blank" ><img id="tm-social" src="assets/img/linkedin.png" alt="Logo do LinkedIn"></a>
+   <a href="https://outlook.live.com/owa/theonnogueira/" target="_blank"> <img id="tm-social" src="assets/img/outlook.png" alt="Logo do Outlook"></a>
+    
+</div>
+  <footer>
+      <style>
+          p {
+              text-align: center;
+          }
+      </style>
+      <p>
+        Todos os direitos reservados: Theo N Medeiros &copy; 
+      </p>
+    
+  </footer>
 </body>
 </html>
 
